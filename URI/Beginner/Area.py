@@ -1,0 +1,6 @@
+Input = input().split()
+print("TRIANGULO: {0:.3f}".format(float(Input[0]) * float(Input[2]) * 0.5))
+print("CIRCULO: {0:.3f}".format(float(Input[2])**2 * 3.14159))
+print("TRAPEZIO: {0:.3f}".format((float(Input[0]) + float(Input[1])) * float(Input[2]) / 2))
+print("QUADRADO: {0:.3f}".format(float(Input[1])**2))
+print("RETANGULO: {0:.3f}".format(float(Input[0]) * float(Input[1])))

@@ -1,0 +1,1 @@
+print("VOLUME = {0:.3f}".format(int(input())**3 * (4/3) * 3.14159))
