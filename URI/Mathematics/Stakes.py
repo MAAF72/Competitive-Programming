@@ -2,11 +2,14 @@ from math import gcd
 
 while True :
 	try :
-		XY = [int(x) for x in input().split()]
-		if XY[0] == XY[1] :
-			print(4)
+		Num = input()
+		if not Num :
+			break
+		A, B = map(int, Num.split())
+		if A == B :
+			print("4")
 		else :
-			FPB = gcd(XY[0], XY[1])
-			print((XY[0] // FPB) * 2 + (XY[1] // FPB) * 2)
+			FPB = gcd(A, B)
+			print((A // FPB) * 2 + (B // FPB) * 2)
 	except EOFError :
-		pass
+		break
